@@ -59,6 +59,15 @@ public class buttonManager : MonoBehaviour {
 	}
 
 
+	//code which is triggered when the fade button is pressed 
+	public void fadeButtonPressed()
+	{
+
+		GameObject.Find ("Smiley").GetComponent<Animator> ().SetTrigger ("enableFade");
+
+	}
+
+
 	// Use this for initialization
 	void Start () {
 	
